@@ -315,7 +315,9 @@ video{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,280px));
     justify-content:center;
-    gap:20px;
+    column-gap:20px;
+    row-gap:40px;
+
 }
 .women-wear h1{
     font-family: 'poppins';
