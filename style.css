@@ -137,7 +137,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     opacity:1;
-    box-shadow: 3px 3px 3px rgb(138, 138, 138),-3px -3px 3px rgb(138, 138, 138),3px 3px 3px rgb(138, 138, 138);
+    box-shadow: 3px 3px 3px rgb(138, 138, 138),-3px -3px 3px rgb(138, 138, 138),3px -3px 3px rgb(138, 138, 138),-3px 3px 3px rgb(138, 138, 138);
 }
 .photos img{
     width:100%;
@@ -225,23 +225,25 @@
 }
 .categories-1 .img{
     width:280px;
-    height:250px;
+    max-height:250px;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgb(138, 138, 138),-3px 3px 3px rgb(138, 138, 138),3px -3px 3px rgb(138, 138, 138);
+    box-shadow: 0px 0px 5px rgb(146, 145, 145);
     opacity: 1;
+    cursor: pointer;
+    overflow: hidden;
 }
 .img img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 .categories-1{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,280px));
     justify-content:center;
-    column-gap:20px;
-    row-gap:20px;
-    padding-bottom:40px;
+    gap:20px;
+    padding-bottom: 40px;
 }
 .img p{
     font-family: 'poppins';
@@ -302,25 +304,24 @@ video{
 }
 .cart .img{
     width:280px;
-    height:250px;
+    max-height:250px;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px rgb(138, 138, 138),-3px 3px 3px rgb(138, 138, 138),3px -3px 3px rgb(138, 138, 138);
-    opacity: 1;
+    box-shadow: 0px 0px 5px rgb(146, 145, 145);
     cursor: pointer;
+    overflow: hidden;
 }
 .cart img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 .cart{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,280px));
     justify-content:center;
-    column-gap:20px;
-    row-gap:20px;
-    padding-bottom:40px;
-
+    gap:20px;
+    padding-bottom: 30px;
 }
 .women-wear h1{
     font-family: 'poppins';
@@ -389,7 +390,7 @@ video{
         margin-right: auto;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
-        padding: 10px 10px 10px 345px;
+        padding: 10px 0px 10px 350px;
     }
     .slide img{
         scroll-snap-align: center;
