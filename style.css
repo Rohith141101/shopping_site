@@ -240,6 +240,7 @@
     grid-template-columns: repeat(auto-fit,minmax(200px,280px));
     justify-content:center;
     column-gap:20px;
+    row-gap:20px;
 }
 .img p{
     font-family: 'poppins';
