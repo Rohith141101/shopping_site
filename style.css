@@ -234,7 +234,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,280px));
     justify-content:center;
-    gap:20px;
+    column-gap:20px;
     align-content: start;
 }
 .img p{
@@ -312,7 +312,7 @@ video{
     grid-template-columns: repeat(auto-fit,minmax(200px,280px));
     justify-content:center;
     column-gap:20px;
-    row-gap:40px;
+    row-gap:20px;
 
 }
 .women-wear h1{
